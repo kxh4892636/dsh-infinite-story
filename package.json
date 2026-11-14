@@ -3,6 +3,10 @@
   "version": "0.2.4",
   "description": "DSH plugin: run a long-form story as a persistent state machine — rules in the system prompt, state on disk, drift blocked at write time.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kxh4892636/dsh-infinite-story.git"
+  },
   "files": [
     "dist",
     "cordis.patch.yml",
@@ -26,11 +30,11 @@
     "test": "vp test src"
   },
   "devDependencies": {
-    "@types/node": "catalog:",
-    "@typescript/native": "catalog:",
-    "typescript": "catalog:",
-    "vite-plus": "catalog:",
-    "vitest": "catalog:"
+    "@types/node": "^24.12.4",
+    "@typescript/native": "npm:typescript@~7.0.2",
+    "typescript": "npm:@typescript/typescript6@~6.0.2",
+    "vite-plus": "1.0.0",
+    "vitest": "5.0.1"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": ">=4.0.5",
@@ -41,6 +45,7 @@
   "engines": {
     "node": ">=22.12.0"
   },
+  "packageManager": "pnpm@11.22.0",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
